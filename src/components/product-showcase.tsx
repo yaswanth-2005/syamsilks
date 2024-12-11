@@ -35,7 +35,7 @@ export default function ProductShowcase() {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-purple-900 mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#e4322c] mb-12 font-mono">
           Featured Products
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -57,7 +57,7 @@ export default function ProductShowcase() {
                   <p className="text-gray-600">{product.price}</p>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+                  <Button className="w-full bg-[#4c2c6e] hover:bg-purple-950 text-white">
                     Add to Cart
                   </Button>
                 </CardFooter>

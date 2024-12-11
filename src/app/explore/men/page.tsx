@@ -31,7 +31,7 @@ export default function ExplorePage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold text-purple-900 mb-12 text-center"
+            className="text-4xl md:text-5xl font-bold text-[#e4322c] mb-12 text-center font-mono"
           >
             Explore Mens Collection
           </motion.h1>
@@ -60,7 +60,7 @@ export default function ExplorePage() {
                   </CardContent>
                   <CardFooter className="p-6">
                     <Link href={category.link} className="w-full">
-                      <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+                      <Button className="w-full bg-[#4c2c6e] hover:bg-purple-950 text-white">
                         Explore {category.name} Collection
                       </Button>
                     </Link>

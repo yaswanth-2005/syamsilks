@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import syamsilks from "@/../public/syamsilks.png";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -12,9 +14,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl font-bold text-purple-900 mb-4"
+          className="text-4xl md:text-6xl font-bold text-[#e4322c] mb-4 font-mono"
         >
-          Discover Exquisite Silk Creations
+          Experience the Elegance of Silk
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +35,7 @@ export default function Hero() {
           <Link href="/explore">
             <Button
               size="lg"
-              className="bg-purple-600 hover:bg-purple-700 text-white"
+              className="bg-[#4c2c6e]  hover:bg-purple-950 text-white"
             >
               Explore Collection
             </Button>
@@ -46,11 +48,13 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         className="md:w-1/2"
       >
-        <img
-          src="/placeholder.svg?height=400&width=600"
-          alt="Elegant silk saree"
-          className="rounded-lg shadow-2xl"
-        />
+        <Image
+          src={syamsilks}
+          alt="Syam Silks"
+          width={500}
+          height={500}
+          className="w-full h-auto object-cover rounded-md"
+        ></Image>
       </motion.div>
     </section>
   );

@@ -75,7 +75,7 @@ export default function ProductsPage() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold text-purple-900 mb-8 text-center"
+            className="text-4xl md:text-5xl font-bold text-[#e4322c] font-mono mb-8 text-center"
           >
             Tops Collection
           </motion.h1>

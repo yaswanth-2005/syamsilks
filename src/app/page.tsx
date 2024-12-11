@@ -2,7 +2,6 @@ import Features from "@/components/features";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import Newsletter from "@/components/newsletter";
 import ProductShowcase from "@/components/product-showcase";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
         <Hero />
         <ProductShowcase />
         <Features />
-        <Newsletter />
       </main>
       <Footer />
     </div>

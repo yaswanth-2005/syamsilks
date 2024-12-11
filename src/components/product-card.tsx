@@ -85,7 +85,7 @@ export function ProductCard({ product }: ProductCardProps) {
             {!inCart ? (
               <Button
                 onClick={handleAddToCart}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
+                className="w-full bg-[#4c2c6e] hover:bg-purple-950 text-white"
               >
                 Add to Cart
               </Button>

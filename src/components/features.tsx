@@ -28,7 +28,7 @@ export default function Features() {
   return (
     <section className="bg-purple-100 py-16">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-purple-900 mb-12">
+        <h2 className="text-3xl font-bold text-center text-purple-900 mb-12 font-mono">
           Why Choose Syam Silks
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

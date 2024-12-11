@@ -54,14 +54,14 @@ export default function CartPage() {
   const total = deliveryFee + calculateTotal();
   return (
     <PageTransition>
-      <div className="min-h-screen bg-gradient-to-b from-amber-50 to-purple-50">
+      <div className="min-h-screen bg-gradient-to-b from-amber-50 to-[#e4322c]-50">
         <Header />
         <main className="container mx-auto px-6 py-32">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold text-purple-900 mb-8 text-center"
+            className="text-4xl md:text-5xl font-bold text-[#e4322c] mb-8 text-center font-mono"
           >
             Your Cart
           </motion.h1>
@@ -145,7 +145,7 @@ export default function CartPage() {
                 <p className="text-xl font-semibold">Total: ${total}</p>
               </div>
               <div className="mt-6 text-right">
-                <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                <Button className="bg-[#e4322c]-600 hover:bg-[#e4322c]-700 bg-purple-900 text-white">
                   Proceed to Checkout
                 </Button>
               </div>

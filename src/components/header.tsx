@@ -5,6 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShoppingCart } from "lucide-react";
 import { RootState } from "@/context/store"; // Update with your actual root state import
+import Image from "next/image";
+import syamsilks from "@/../public/syamsilks.png";
 
 export default function Header() {
   // Get the cart items from the Redux store
@@ -21,7 +23,7 @@ export default function Header() {
       <nav className="container px-6 py-4">
         <div className="flex justify-between">
           <Link href="/" className="text-2xl font-bold text-purple-800">
-            Syam Silks
+            <Image src={syamsilks} alt="" width={50} height={50} />
           </Link>
           <Link
             href="/cart"
